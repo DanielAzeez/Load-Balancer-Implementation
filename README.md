@@ -1,8 +1,5 @@
 # Load-Balancer-Implementation
 
-
-# HAProxy Load Balancing Lab 🚀  
-
 ## **Project Overview**  
 This project demonstrates how to set up **HAProxy** as a **load balancer** for distributing traffic between multiple web servers.  
 We used **three AWS EC2 instances**:  
