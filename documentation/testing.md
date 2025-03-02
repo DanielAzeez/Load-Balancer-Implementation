@@ -1,6 +1,5 @@
 ### **📌 `testing.md`** (Performance Testing and Results Analysis)  
 
-```md
 # HAProxy Load Balancer Testing & Performance Analysis
 
 ## **Overview**
