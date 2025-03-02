@@ -75,8 +75,8 @@ frontend http_front
 
 backend web_servers
     balance roundrobin  # Load balancing method (Round Robin / LeastConn / IP Hash)
-    server web1 <WebServer1-IP>:80 check
-    server web2 <WebServer2-IP>:80 check
+    server web1 <WebServer1-IP>:8081 check
+    server web2 <WebServer2-IP>:8082 check
 ```
 Then restarted HAProxy:
 ```bash
@@ -104,8 +104,8 @@ balance leastconn
 ### **4️⃣ Configure Health Checks**
 HAProxy ensures only healthy servers receive traffic:
 ```cfg
-server web1 <WebServer1-IP>:80 check
-server web2 <WebServer2-IP>:80 check
+server web1 <WebServer1-IP>:8081 check
+server web2 <WebServer2-IP>:8082 check
 ```
 
 ---
@@ -150,5 +150,3 @@ For **high-performance applications**, I **recommend Least Connections**.
 - **HAProxy efficiently manages load balancing across multiple servers.**  
 - **Health checks prevent downtime by excluding unresponsive servers.**  
 - **Least Connections** provides the best efficiency for **dynamic traffic environments**.  
-
-```
