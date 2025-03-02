@@ -1,6 +1,5 @@
 ### **📌 `implementation.md`** (Step-by-Step Documentation of What I Did)  
 
-```md
 # HAProxy Load Balancer Implementation
 
 ## **Overview**
